@@ -1,0 +1,55 @@
+program justSomeCode;
+
+
+const HEX = $10;
+      OCTAL = &20;	
+      DECIMAL = 30;
+
+var I, J, POOR : integer;
+	  RICH : integer;
+var       SOMETHING : integer;	  
+	  
+var X : array [0 .. 10] of integer;
+
+
+
+begin
+
+readln(I);
+
+while ( 2 * I - 5 >= 0 ) do
+begin
+
+	I := I - 1;
+	if ( I mod 2 = 0 ) then
+		writeln(I);
+	else
+		write(I);
+
+end;
+
+for I := 10 downto 0 do 
+	X[I] := I;
+	
+
+for I := 0 to 10 do
+	writeln(X[I]);
+
+
+for J := 0 to DECIMAL do begin
+	if J <= 15 then begin
+		break;
+	end;
+	else
+		writeln(J + 2);
+end;
+
+		
+
+writeln(HEX);
+writeln(OCTAL);
+writeln(DECIMAL);
+
+end.
+
+
